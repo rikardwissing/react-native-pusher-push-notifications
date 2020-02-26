@@ -66,7 +66,7 @@ public class PusherWrapper {
                         final WritableMap map = new WritableNativeMap();
                         RemoteMessage.Notification notification = remoteMessage.getNotification();
 
-
+                        final WritableMap data = new WritableNativeMap();
                         for (Entry<String, String> entry : remoteMessage.getData().entrySet()) {
                             data.putString(entry.getKey(), entry.getValue());
                         }
